@@ -1,0 +1,14 @@
+﻿If you can't find the icons you're looking for included with 
+Visual Studio's image library, there are plenty of free icon 
+packs available on the Internet. 
+Several of the other posts mention their picks, but I'm a huge 
+fan of Fugue Icons. Similar to the Silk icons, 
+they're free for use in your applications as long 
+as you provide attribution. Otherwise, you can purchase a 
+royalty-free license for a very reasonable price.
+
+http://p.yusukekamiyamane.com/
+[
+Some icons by Yusuke Kamiyamane. Licensed under a Creative Commons Attribution 3.0 License.
+Some icons by Yusuke Kamiyamane.
+]

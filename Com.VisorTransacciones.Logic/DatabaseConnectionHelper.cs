@@ -65,7 +65,7 @@ namespace Com.VisorTransacciones.Logic
             }
         }
 
-        public List<string> GetDataBases() {
+        public static List<string> GetDataBases() {
             return Databases;
         }
     }

@@ -95,6 +95,7 @@
             this.btConectar.TabIndex = 6;
             this.btConectar.Text = "Conectar";
             this.btConectar.UseVisualStyleBackColor = true;
+            this.btConectar.Click += new System.EventHandler(this.btConectar_Click);
             // 
             // btCancelar
             // 
