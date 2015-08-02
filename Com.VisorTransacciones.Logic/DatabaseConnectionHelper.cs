@@ -37,7 +37,7 @@ namespace Com.VisorTransacciones.Logic
             connectionBuilder.Add("Password", Password);
             return connectionBuilder.ToString();
         }
-
+         
         public void ConectarAlServidor()
         {
             string cadenaConexiion = RetornaCadenaConexionMasterDatabase();
