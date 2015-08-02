@@ -52,10 +52,19 @@
     <Compile Include="FormParent.Designer.cs">
       <DependentUpon>FormParent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmConexionBaseDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmConexionBaseDeDatos.Designer.cs">
+      <DependentUpon>FrmConexionBaseDeDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormParent.resx">
       <DependentUpon>FormParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConexionBaseDeDatos.resx">
+      <DependentUpon>FrmConexionBaseDeDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

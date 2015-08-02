@@ -8,16 +8,16 @@ using System.Data;
 
 namespace Com.VisorTransacciones.Logic
 {
-    public class DatabaseConnectionHelper
+    public static class DatabaseConnectionHelper
     {
-        public string Server { get; set; }
-        public string User { get; set; }
-        public string Password { get; set; }
-        public string Database { get; set; }
-        public bool ConnectionStatus { get; set; }
-        public List<String> Databases { get; set; }
+        public static string Server { get; set; }
+        public static string User { get; set; }
+        public static string Password { get; set; }
+        public static string Database { get; set; }
+        public static bool ConnectionStatus { get; set; }
+        static List<String> Databases;
 
-        public string RetornaCadenaConexionMasterDatabase()
+        public static string RetornaCadenaConexionMasterDatabase()
         {
             //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
             var connectionBuilder = new SqlConnectionStringBuilder();
@@ -27,7 +27,7 @@ namespace Com.VisorTransacciones.Logic
             connectionBuilder.Add("Password", Password);
             return connectionBuilder.ToString();
         }
-        public string RetornaCadenaConexionMasterDatabase(string dataBase)
+        public static string RetornaCadenaConexionMasterDatabase(string dataBase)
         {
             //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
             var connectionBuilder = new SqlConnectionStringBuilder();
@@ -38,7 +38,7 @@ namespace Com.VisorTransacciones.Logic
             return connectionBuilder.ToString();
         }
          
-        public void ConectarAlServidor()
+        public static void ConectarAlServidor()
         {
             string cadenaConexiion = RetornaCadenaConexionMasterDatabase();
             Databases = new List<string>();
@@ -63,7 +63,10 @@ namespace Com.VisorTransacciones.Logic
                     }
                 }
             }
+        }
 
+        public List<string> GetDataBases() {
+            return Databases;
         }
     }
 }
